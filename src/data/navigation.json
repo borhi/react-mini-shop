@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "T-SHIRT",
+        "path": "/t-shirt"
+    },
+    {
+        "id": 2,
+        "name": "GLASSES",
+        "path": "/glasses"
+    },
+    {
+        "id": 3,
+        "name": "SOCKS",
+        "path": "/socks"
+    },
+    {
+        "id": 4,
+        "name": "OTHER",
+        "path": "/other"
+    }
+]

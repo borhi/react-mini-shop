@@ -1,0 +1,48 @@
+[{
+    "id": "size",
+    "name": "SIZE",
+    "options": [{
+        "id": 1, "label": "XS"
+    }, {
+        "id": 2, "label": "S"
+    }, {
+        "id": 3, "label": "M"
+    }, {
+        "id": 4, "label": "L"
+    }, {
+        "id": 5, "label": "XL"
+    }, {
+        "id": 6, "label": "XXL"
+    }],
+    "visibility": ["addtocart", "filters", "cart"]
+}, {
+    "id": "color",
+    "name": "COLOR",
+    "options": [{
+        "id": 1, "label": "WHITE"
+    }, {
+        "id": 2, "label": "BLACK"
+    }, {
+        "id": 3, "label": "GREEN"
+    }, {
+        "id": 4, "label": "BLUE"
+    }, {
+        "id": 5, "label": "RED"
+    }, {
+        "id": 6, "label": "YELLOW"
+    }, {
+        "id": 7, "label": "GREY"
+    }],
+    "visibility": ["addtocart", "filters", "cart"]
+}, {
+    "id": "availability",
+    "name": "AVAILABILITY",
+    "options": [{
+        "id": 1,
+        "label": "IN STOCK"
+    }, {
+        "id": 2,
+        "label": "PRE ORDER"
+    }],
+    "visibility": ["filters", "availability"]
+}]
