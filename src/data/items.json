@@ -4,14 +4,14 @@
     "url": "t-shirt-1",
     "price": 300,
     "img": [
-        "/images/t-shirt-1.jpg",
-        "/images/t-shirt-2.jpg",
-        "/images/t-shirt-3.jpg",
-        "/images/t-shirt-4.jpg",
-        "/images/t-shirt-5.jpg",
-        "/images/t-shirt-6.jpg",
-        "/images/t-shirt-7.jpg",
-        "/images/t-shirt-8.jpg"
+        "./images/t-shirt-1.jpg",
+        "./images/t-shirt-2.jpg",
+        "./images/t-shirt-3.jpg",
+        "./images/t-shirt-4.jpg",
+        "./images/t-shirt-5.jpg",
+        "./images/t-shirt-6.jpg",
+        "./images/t-shirt-7.jpg",
+        "./images/t-shirt-8.jpg"
     ],
     "catygory": 1,
     "weight": 1,
@@ -159,8 +159,8 @@
     "url": "t-shirt-2",
     "price": 350,
     "img": [
-        "/images/t-shirt-9.jpg",
-        "/images/t-shirt-10.jpg"
+        "./images/t-shirt-9.jpg",
+        "./images/t-shirt-10.jpg"
     ],
     "catygory": 1,
     "weight": 2,
@@ -203,8 +203,8 @@
     "url": "t-shirt-3",
     "price": 350,
     "img": [
-        "/images/t-shirt-11.jpg",
-        "/images/t-shirt-12.jpg"
+        "./images/t-shirt-11.jpg",
+        "./images/t-shirt-12.jpg"
     ],
     "catygory": 1,
     "weight": 3,
@@ -217,8 +217,8 @@
     "url": "t-shirt-4",
     "price": 350,
     "img": [
-        "/images/t-shirt-13.jpg",
-        "/images/t-shirt-14.jpg"
+        "./images/t-shirt-13.jpg",
+        "./images/t-shirt-14.jpg"
     ],
     "catygory": 1,
     "weight": 3,
@@ -261,8 +261,8 @@
     "url": "t-shirt-5",
     "price": 350,
     "img": [
-        "/images/t-shirt-15.jpg",
-        "/images/t-shirt-16.jpg"
+        "./images/t-shirt-15.jpg",
+        "./images/t-shirt-16.jpg"
     ],
     "catygory": 1,
     "weight": 0,

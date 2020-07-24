@@ -109,7 +109,7 @@ const Navigation = () => {
         {navigation.map((value) => (
           <Route
             key={value.id}
-            path={value.path}
+            path={"/" + value.path}
             render={() => <CategoryPage category={value.id} />}
           />
         ))}

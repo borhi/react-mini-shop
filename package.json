@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "react mini shop",
   "main": "index.js",
+  "homepage": "https://react-mimi-shop.herokuapp.com/",
   "scripts": {
     "start": "node server.js",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "test": "jest --collect-coverage",
-    "stats": "webpack --json > stats.json"
+    "stats": "webpack --json > stats.json",
+    "predeploy": "npm run build",
+    "deploy": "git push heroku master"
   },
   "keywords": [
     "react, mini, shop"
