@@ -10,7 +10,6 @@
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "test": "jest --collect-coverage",
     "stats": "webpack --json > stats.json",
-    "predeploy": "npm run build",
     "deploy": "git push heroku master"
   },
   "keywords": [
