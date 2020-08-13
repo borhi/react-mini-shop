@@ -21,10 +21,10 @@ const Availability = ({ item }) => {
     const options = availabilityAttribute.options.filter((option) => {
       if (item.children) {
         return item.children
-          .find((child) => child[availabilityAttribute.id] === option.id);
+          .find((child) => child.attributes[availabilityAttribute.id] === option.id);
       }
 
-      return item[availabilityAttribute.id] === option.id;
+      return item.attributes[availabilityAttribute.id] === option.id;
     });
     availability = options[0] ? options[0] : '';
   }

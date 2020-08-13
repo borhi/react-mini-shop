@@ -18,139 +18,193 @@
     "children": [
         {
             "id": 1,
-            "color": 5,
-            "size": 1,
-            "availability": 1
+            "attributes": {
+                "color": 5,
+                "size": 1,
+                "availability": 1
+            }
         }, {
             "id": 2,
-            "color": 1,
-            "size": 1,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 1,
+                "availability": 1
+            }
         }, {
             "id": 3,
-            "color": 3,
-            "size": 1,
-            "availability": 1
+            "attributes": {
+                "color": 3,
+                "size": 1,
+                "availability": 1
+            }
         }, {
             "id": 4,
-            "color": 4,
-            "size": 1,
-            "availability": 1
+            "attributes": {
+                "color": 4,
+                "size": 1,
+                "availability": 1
+            }
         }, {
             "id": 5,
-            "color": 5,
-            "size": 2,
-            "availability": 1
+            "attributes": {
+                "color": 5,
+                "size": 2,
+                "availability": 1
+            }
         }, {
             "id": 6,
-            "color": 1,
-            "size": 2,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 2,
+                "availability": 1
+            }
         }, {
             "id": 7,
-            "color": 3,
-            "size": 2,
-            "availability": 1
+            "attributes": {
+                "color": 3,
+                "size": 2,
+                "availability": 1
+            }
         }, {
             "id": 8,
-            "color": 4,
-            "size": 2,
-            "availability": 1
+            "attributes": {
+                "color": 4,
+                "size": 2,
+                "availability": 1
+            }
         }, {
             "id": 9,
-            "color": 5,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 5,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 10,
-            "color": 1,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 11,
-            "color": 3,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 3,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 12,
-            "color": 4,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 4,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 13,
-            "color": 5,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 5,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 14,
-            "color": 1,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 15,
-            "color": 3,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 3,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 16,
-            "color": 4,
-            "size": 3,
-            "availability": 1
+            "attributes": {
+                "color": 4,
+                "size": 3,
+                "availability": 1
+            }
         }, {
             "id": 17,
-            "color": 5,
-            "size": 4,
-            "availability": 1
+            "attributes": {
+                "color": 5,
+                "size": 4,
+                "availability": 1
+            }
         }, {
             "id": 18,
-            "color": 1,
-            "size": 4,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 4,
+                "availability": 1
+            }
         }, {
             "id": 19,
-            "color": 3,
-            "size": 4,
-            "availability": 1
+            "attributes": {
+                "color": 3,
+                "size": 4,
+                "availability": 1
+            }
         }, {
             "id": 20,
-            "color": 4,
-            "size": 4,
-            "availability": 1
+            "attributes": {
+                "color": 4,
+                "size": 4,
+                "availability": 1
+            }
         }, {
             "id": 21,
-            "color": 5,
-            "size": 5,
-            "availability": 2
+            "attributes": {
+                "color": 5,
+                "size": 5,
+                "availability": 2
+            }
         }, {
             "id": 22,
-            "color": 1,
-            "size": 5,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 5,
+                "availability": 1
+            }
         }, {
             "id": 24,
-            "color": 4,
-            "size": 5,
-            "availability": 2
+            "attributes": {
+                "color": 4,
+                "size": 5,
+                "availability": 2
+            }
         }, {
             "id": 25,
-            "color": 5,
-            "size": 6,
-            "availability": 1
+            "attributes": {
+                "color": 5,
+                "size": 6,
+                "availability": 1
+            }
         }, {
             "id": 26,
-            "color": 1,
-            "size": 6,
-            "availability": 1
+            "attributes": {
+                "color": 1,
+                "size": 6,
+                "availability": 1
+            }
         }, {
             "id": 27,
-            "color": 3,
-            "size": 6,
-            "availability": 1
+            "attributes": {
+                "color": 3,
+                "size": 6,
+                "availability": 1
+            }
         }, {
             "id": 28,
-            "color": 4,
-            "size": 6,
-            "availability": 1
+            "attributes": {
+                "color": 4,
+                "size": 6,
+                "availability": 1
+            }
         }
     ]
 }, {
@@ -167,34 +221,46 @@
     "children": [
         {
             "id": 1,
-            "size": 1,
-            "color": 5,
-            "availability": 1
+            "attributes": {
+                "size": 1,
+                "color": 5,
+                "availability": 1
+            }
         }, {
             "id": 2,
-            "size": 2,
-            "color": 5,
-            "availability": 2
+            "attributes": {
+                "size": 2,
+                "color": 5,
+                "availability": 2
+            }
         }, {
             "id": 3,
-            "size": 3,
-            "color": 5,
-            "availability": 1
+            "attributes": {
+                "size": 3,
+                "color": 5,
+                "availability": 1
+            }
         }, {
             "id": 4,
-            "size": 4,
-            "color": 5,
-            "availability": 1
+            "attributes": {
+                "size": 4,
+                "color": 5,
+                "availability": 1
+            }
         }, {
             "id": 5,
-            "size": 5,
-            "color": 5,
-            "availability": 1
+            "attributes": {
+                "size": 5,
+                "color": 5,
+                "availability": 1
+            }
         }, {
             "id": 6,
-            "size": 6,
-            "color": 5,
-            "availability": 1
+            "attributes": {
+                "size": 6,
+                "color": 5,
+                "availability": 1
+            }
         }
     ]
 }, {
@@ -208,9 +274,11 @@
     ],
     "catygory": 1,
     "weight": 3,
-    "color": 2,
-    "size": 3,
-    "availability": 1
+    "attributes": {
+        "color": 2,
+        "size": 3,
+        "availability": 1
+    }
 }, {
     "id": 4,
     "name": "T-shirt 4",
@@ -225,34 +293,46 @@
     "children": [
         {
             "id": 1,
-            "size": 1,
-            "color": 7,
-            "availability": 1
+            "attributes": {
+                "size": 1,
+                "color": 7,
+                "availability": 1
+            }
         }, {
             "id": 2,
-            "size": 2,
-            "color": 7,
-            "availability": 2
+            "attributes": {
+                "size": 2,
+                "color": 7,
+                "availability": 2
+            }
         }, {
             "id": 3,
-            "size": 3,
-            "color": 7,
-            "availability": 1
+            "attributes": {
+                "size": 3,
+                "color": 7,
+                "availability": 1
+            }
         }, {
             "id": 4,
-            "size": 4,
-            "color": 7,
-            "availability": 1
+            "attributes": {
+                "size": 4,
+                "color": 7,
+                "availability": 1
+            }
         }, {
             "id": 5,
-            "size": 5,
-            "color": 7,
-            "availability": 1
+            "attributes": {
+                "size": 5,
+                "color": 7,
+                "availability": 1
+            }
         }, {
             "id": 6,
-            "size": 6,
-            "color": 7,
-            "availability": 1
+            "attributes": {
+                "size": 6,
+                "color": 7,
+                "availability": 1
+            }
         }
     ]
 }, {
@@ -269,34 +349,46 @@
     "children": [
         {
             "id": 1,
-            "size": 1,
-            "color": 6,
-            "availability": 1
+            "attributes": {
+                "size": 1,
+                "color": 6,
+                "availability": 1
+            }
         }, {
             "id": 2,
-            "size": 2,
-            "color": 6,
-            "availability": 2
+            "attributes": {
+                "size": 2,
+                "color": 6,
+                "availability": 2
+            }
         }, {
             "id": 3,
-            "size": 3,
-            "color": 6,
-            "availability": 1
+            "attributes": {
+                "size": 3,
+                "color": 6,
+                "availability": 1
+            }
         }, {
             "id": 4,
-            "size": 4,
-            "color": 6,
-            "availability": 1
+            "attributes": {
+                "size": 4,
+                "color": 6,
+                "availability": 1
+            }
         }, {
             "id": 5,
-            "size": 5,
-            "color": 6,
-            "availability": 1
+            "attributes": {
+                "size": 5,
+                "color": 6,
+                "availability": 1
+            }
         }, {
             "id": 6,
-            "size": 6,
-            "color": 6,
-            "availability": 1
+            "attributes": {
+                "size": 6,
+                "color": 6,
+                "availability": 1
+            }
         }
     ]
 }]

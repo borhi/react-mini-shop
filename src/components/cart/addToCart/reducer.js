@@ -9,13 +9,13 @@ export const initAddToCart = ({ initItem, initAttributes }) => {
   attributes.forEach((attribute, index) => {
     const options = attribute.options
       .filter((option) => initItem.children && initItem.children.find(
-        (child) => child[attribute.id] === option.id,
+        (child) => child.attributes[attribute.id] === option.id,
       ));
 
     options.forEach((option, optionIndex) => {
       options[optionIndex] = {
         ...option,
-        count: initItem.children.filter((child) => child[attribute.id] === option.id).length,
+        count: initItem.children.filter((child) => child.attributes[attribute.id] === option.id).length,
       };
     });
     attributes[index].options = options;
@@ -55,14 +55,14 @@ export const addToCartReducer = (state, action) => {
     let { children } = item;
     selectedAttributes.forEach((option, index) => {
       if (selectedAttributeIndex === -1 || index < selectedAttributeIndex) {
-        children = children.filter((child) => child[option.id] === option.value);
+        children = children.filter((child) => child.attributes[option.id] === option.value);
       }
     });
 
     attribute.options.forEach((option, optionIndex) => {
       attributes[index].options[optionIndex] = {
         ...option,
-        count: children.filter((item) => item[attribute.id] === option.id).length,
+        count: children.filter((item) => item.attributes[attribute.id] === option.id).length,
       };
     });
   });
@@ -71,7 +71,7 @@ export const addToCartReducer = (state, action) => {
   if (selectedAttributes.length > 0) {
     selectedAttributes.forEach((selectedAttribute) => {
       cartItem.children = cartItem.children
-        .filter((child) => child[selectedAttribute.id] === selectedAttribute.value);
+        .filter((child) => child.attributes[selectedAttribute.id] === selectedAttribute.value);
     });
   }
 

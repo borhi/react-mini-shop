@@ -2,9 +2,9 @@ import cloneDeep from 'lodash.clonedeep';
 
 const filterOptions = (option, items, attributeId) => items.find((item) => {
   if (item.children) {
-    return item.children.find((child) => child[attributeId] === option.id);
+    return item.children.find((child) => child.attributes[attributeId] === option.id);
   }
-  return item[attributeId] === option.id;
+  return item.attributes[attributeId] === option.id;
 });
 
 export const initCategoryPage = ({ initItems, initAttributes, category }) => {
@@ -21,9 +21,9 @@ export const initCategoryPage = ({ initItems, initAttributes, category }) => {
     options.forEach((option, optionIndex) => {
       const count = items.filter((item) => {
         if (item.children) {
-          return item.children.find((child) => child[attribute.id] === option.id);
+          return item.children.find((child) => child.attributes[attribute.id] === option.id);
         }
-        return item[attribute.id] === option.id;
+        return item.attributes[attribute.id] === option.id;
       }).length;
       options[optionIndex] = { ...option, count, checked: false };
     });
@@ -62,10 +62,10 @@ export const categoryPageReducer = (state, action) => {
           filteredItems = filteredItems.filter((item, index) => {
             if (item.children) {
               filteredItems[index].children = item.children
-                .filter((child) => filter.values.includes(child[filter.id]));
+                .filter((child) => filter.values.includes(child.attributes[filter.id]));
               return filteredItems[index].children.length;
             }
-            return filter.values.includes(item[filter.id]);
+            return filter.values.includes(item.attributes[filter.id]);
           });
         }
       });
@@ -73,9 +73,9 @@ export const categoryPageReducer = (state, action) => {
       attribute.options.forEach((option, optionIndex) => {
         const count = filteredItems.filter((item) => {
           if (item.children) {
-            return item.children.find((child) => child[attribute.id] === option.id);
+            return item.children.find((child) => child.attributes[attribute.id] === option.id);
           }
-          return item[attribute.id] === option.id;
+          return item.attributes[attribute.id] === option.id;
         }).length;
 
         if (!count) {
@@ -100,7 +100,7 @@ export const categoryPageReducer = (state, action) => {
       }
 
       if (children) {
-        children = children.filter((child) => filter.values.includes(child[filter.id]));
+        children = children.filter((child) => filter.values.includes(child.attributes[filter.id]));
 
         if (!children.length) {
           items[index].display = false;
@@ -109,7 +109,7 @@ export const categoryPageReducer = (state, action) => {
         return;
       }
 
-      if (!filter.values.includes(item[filter.id])) {
+      if (!filter.values.includes(item.attributes[filter.id])) {
         items[index].display = false;
       }
     });

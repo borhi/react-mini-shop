@@ -268,7 +268,7 @@ const Item = ({
   const qty = (() => (child ? child.qty : item.qty))();
   const attributesConteiner = attributes.map((attribute) => {
     if (child) {
-      const option = attribute.options.find((option) => option.id === child[attribute.id]);
+      const option = attribute.options.find((option) => option.id === child.attributes[attribute.id]);
       if (option) {
         return (
           <React.Fragment key={`${attribute.id}-${option.id}`}>

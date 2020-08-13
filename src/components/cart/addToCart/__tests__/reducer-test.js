@@ -4,8 +4,10 @@ it('init test', () => {
   expect(initAddToCart({
     initItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+        }
       }],
     },
     initAttributes: [{
@@ -24,8 +26,10 @@ it('init test', () => {
   })).toEqual({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+        }
       }],
     },
     attributes: [{
@@ -43,8 +47,10 @@ it('init test', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+        }
       }],
     },
     selectedAttributes: [],
@@ -54,8 +60,10 @@ it('init test', () => {
 it('init test without children', () => {
   expect(initAddToCart({
     initItem: {
-      attribute_1: 1,
-      attribute_2: 1,
+      attributes: {
+        attribute_1: 1,
+        attribute_2: 1,
+      }
     },
     initAttributes: [{
       id: 'attribute_1',
@@ -72,8 +80,10 @@ it('init test without children', () => {
     }],
   })).toEqual({
     item: {
-      attribute_1: 1,
-      attribute_2: 1,
+      attributes: {
+        attribute_1: 1,
+        attribute_2: 1,
+      }
     },
     attributes: [{
       id: 'attribute_1',
@@ -89,8 +99,10 @@ it('init test without children', () => {
       visibility: ['addtocart'],
     }],
     cartItem: {
-      attribute_1: 1,
-      attribute_2: 1,
+      attributes: {
+        attribute_1: 1,
+        attribute_2: 1,
+      }
     },
     selectedAttributes: [],
   })
@@ -100,17 +112,23 @@ it('reducer test one checked', () => {
   expect(addToCartReducer({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     attributes: [{
@@ -128,34 +146,46 @@ it('reducer test one checked', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     selectedAttributes: [],
   }, {attributeId: "attribute_1", value: 1})).toEqual({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     attributes: [{
@@ -176,13 +206,17 @@ it('reducer test one checked', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     selectedAttributes: [{ id: "attribute_1", value: 1 }],
@@ -193,17 +227,23 @@ it('reducer test second checked', () => {
   expect(addToCartReducer({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     attributes: [{
@@ -224,30 +264,40 @@ it('reducer test second checked', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     selectedAttributes: [{ id: "attribute_1", value: 1 }],
   }, { attributeId: "attribute_2", value: 1 })).toEqual({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     attributes: [{
@@ -268,9 +318,11 @@ it('reducer test second checked', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }],
     },
     selectedAttributes: [{ id: "attribute_1", value: 1 }, { id: "attribute_2", value: 1 }],
@@ -281,17 +333,23 @@ it('reducer test first rechecked', () => {
   expect(addToCartReducer({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     attributes: [{
@@ -312,26 +370,34 @@ it('reducer test first rechecked', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }],
     },
     selectedAttributes: [{ id: "attribute_1", value: 1 }, { id: "attribute_2", value: 1 }],
   }, { attributeId: "attribute_1", value: 2 })).toEqual({
     item: {
       children: [{
-        attribute_1: 1,
-        attribute_2: 1,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 1,
+          attribute_3: 1,
+        }
       }, {
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }, {
-        attribute_1: 1,
-        attribute_2: 2,
-        attribute_3: 1,
+        attributes: {
+          attribute_1: 1,
+          attribute_2: 2,
+          attribute_3: 1,
+        }
       }],
     },
     attributes: [{
@@ -352,9 +418,11 @@ it('reducer test first rechecked', () => {
     }],
     cartItem: {
       children: [{
-        attribute_1: 2,
-        attribute_2: 2,
-        attribute_3: 2,
+        attributes: {
+          attribute_1: 2,
+          attribute_2: 2,
+          attribute_3: 2,
+        }
       }],
     },
     selectedAttributes: [{ id: "attribute_1", value: 2 }],
