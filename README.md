@@ -1,5 +1,3 @@
-Demo: https://react-mimi-shop.herokuapp.com/
-
 Run in the docker:
 
 `docker build -t react-shop/frontend . && docker run -p 8080:80 react-shop/frontend:latest`
