@@ -71,7 +71,7 @@ const Filter = ({ attributes, onChange }) => {
         {filters}
       </Box>
       <Box display={{ xs: 'block', sm: 'none' }}>
-        <Button variant="outlined" startIcon={<FilterListIcon />} className={classes.filterButton} onClick={toggleDrawer(true)}>ФИЛЬТРЫ</Button>
+        <Button variant="outlined" startIcon={<FilterListIcon />} className={classes.filterButton} onClick={toggleDrawer(true)}>FILTERS</Button>
         <Drawer anchor="left" className={classes.drawer} open={open} onClose={toggleDrawer(false)}>
           <Box className={classes.filterConteiner}>
             {filters}

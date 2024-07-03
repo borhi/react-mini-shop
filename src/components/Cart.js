@@ -224,7 +224,7 @@ const Cart = ({
         autoHideDuration={3000}
       >
         <Alert severity="error">
-          An error has occurred. Try a little later.
+          An error has occurred. Try a little bit later.
         </Alert>
       </Snackbar>
     </div>
